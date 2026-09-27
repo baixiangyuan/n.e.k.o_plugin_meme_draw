@@ -1,0 +1,41 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "N.E.K.O: check meme_draw",
+      "type": "shell",
+      "command": "uv run neko-plugin check meme_draw",
+      "options": {
+        "cwd": "${config:nekoPlugin.repoRoot}"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "N.E.K.O: sync meme_draw",
+      "type": "shell",
+      "command": "uv run --with pip neko-plugin sync meme_draw --clean",
+      "options": {
+        "cwd": "${config:nekoPlugin.repoRoot}"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "N.E.K.O: check -r meme_draw",
+      "type": "shell",
+      "command": "uv run neko-plugin check -r meme_draw",
+      "options": {
+        "cwd": "${config:nekoPlugin.repoRoot}"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "N.E.K.O: build meme_draw",
+      "type": "shell",
+      "command": "uv run neko-plugin build meme_draw",
+      "options": {
+        "cwd": "${config:nekoPlugin.repoRoot}"
+      },
+      "problemMatcher": []
+    }
+  ]
+}

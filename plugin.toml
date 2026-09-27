@@ -1,0 +1,16 @@
+[plugin]
+id = "meme_draw"
+name = "表情抽图"
+type = "plugin"
+description = "随机抽一张表情图发送到聊天：普通款为主，隐藏款小概率掉落。图库内置并自动同步，开箱即用，无需任何配置。"
+short_description = "Random meme drawer with rare hidden drops."
+keywords = ["抽图", "表情包", "meme", "随机", "隐藏款", "盲盒"]
+version = "0.1.0"
+entry = "plugin.plugins.meme_draw:MemeDrawPlugin"
+
+[plugin.author]
+name = "baixiangyuan"
+
+[plugin.sdk]
+recommended = ">=0.1.0,<0.2.0"
+supported = ">=0.1.0,<0.3.0"
